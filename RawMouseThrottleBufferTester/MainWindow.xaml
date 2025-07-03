@@ -1,0 +1,15 @@
+﻿<Window x:Class="RawMouseThrottleBufferTester.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RawMouseThrottle" Width="420" Height="240">
+    <Grid>
+        <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="{Binding Current,  StringFormat='Current  : {0:F2} ms'}" FontSize="18"/>
+            <TextBlock Text="{Binding Average,  StringFormat='Average  : {0:F2} ms'}" FontSize="18"/>
+            <TextBlock Text="{Binding StdDev,   StringFormat='StdDev   : {0:F2} ms'}" FontSize="18"/>
+            <TextBlock Text="{Binding Minimum,  StringFormat='Minimum  : {0:F2} ms'}" FontSize="18"/>
+            <TextBlock Text="{Binding Maximum,  StringFormat='Maximum  : {0:F2} ms'}" FontSize="18"/>
+            <TextBlock Text="{Binding Count,    StringFormat='Samples  : {0:N0}'}"  FontSize="18"/>
+        </StackPanel>
+    </Grid>
+</Window>
